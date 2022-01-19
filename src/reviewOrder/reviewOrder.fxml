@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="reviewPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reviewOrder.ReviewOrderController">
+   <children>
+      <AnchorPane layoutX="70.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Order Details">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderDetails_label" layoutX="14.0" layoutY="45.0" text="order details text" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="markAsPaid_btn" layoutX="332.0" layoutY="188.0" mnemonicParsing="false" onAction="#onPaidButtonClick" prefHeight="25.0" prefWidth="157.0" text="Mark As Paid" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+   </children>
+</AnchorPane>
